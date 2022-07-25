@@ -1,0 +1,18 @@
+query AllProducts {
+  allProducts {
+    edges {
+      node {
+        name
+        popular
+        benefits
+        price_per_month
+        django_id_monthly
+        price_per_year
+        django_id_yearly
+        _meta {
+          id
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+query AllFaq($name: String) {
+  allFaqs(where: { name: $name }) {
+    edges {
+      node {
+        name
+        items {
+          answer
+          question
+        }
+        _meta {
+          id
+        }
+      }
+    }
+  }
+}

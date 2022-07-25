@@ -1,0 +1,39 @@
+query AllIntegrations($first: Int) {
+  allIntegrations(first: $first, sortBy: name_ASC) {
+    edges {
+      node {
+        _meta {
+          id
+          tags
+        }
+        name
+        category
+        logo
+        coming_soon
+        __typename
+      }
+    }
+  }
+}
+
+query HomeIntegrations {
+  allIntegrations(
+    first: 4
+    where: { coming_soon: false }
+    sortBy: meta_firstPublicationDate_ASC
+  ) {
+    edges {
+      node {
+        _meta {
+          id
+          tags
+        }
+        name
+        category
+        logo
+        coming_soon
+        __typename
+      }
+    }
+  }
+}

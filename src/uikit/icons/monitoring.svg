@@ -1,0 +1,9 @@
+<svg id="Regular"
+  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5px" height="48" width="48">
+  <defs></defs>
+  <title>monitor-heart-desktop</title>
+  <polygon points="15.75 21.75 8.25 21.75 9 17.25 15 17.25 15.75 21.75" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></polygon>
+  <line x1="6" y1="21.75" x2="18" y2="21.75" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></line>
+  <rect x="0.75" y="2.25" width="22.5" height="15" rx="2.25" ry="2.25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></rect>
+  <path d="M19.933,9.75H17.451a.374.374,0,0,1-.312-.167L14.608,5.788a.375.375,0,0,0-.647.04l-3.922,7.844a.375.375,0,0,1-.647.04L6.861,9.917a.374.374,0,0,0-.312-.167H3.433" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>

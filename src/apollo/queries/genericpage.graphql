@@ -1,0 +1,6 @@
+query GenericPage($slug: String!) {
+  generic_page(uid: $slug, lang: "en-us") {
+    title
+    content
+  }
+}

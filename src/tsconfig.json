@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "@helper/*": ["helper/*"],
+      "@icons/*": ["uikit/icons/*"],
+      "@components/*": ["uikit/components"],
+      "@layouts/*": ["uikit/layouts"],
+      "@uikit/*": ["uikit/*"]
+    },
+    "incremental": true
+  },
+  "include": ["next-env.d.ts", "custom.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
+}

@@ -1,0 +1,13 @@
+overwrite: true
+customFetch: 'codegen-prismic-fetch'
+schema: https://servicepong.cdn.prismic.io/graphql
+documents: 'apollo/**/*.graphql'
+generates:
+  apollo/generated/types.ts:
+    plugins:
+      - 'typescript'
+      - 'typescript-operations'
+      - 'typescript-react-apollo'
+  ./graphql.schema.json:
+    plugins:
+      - 'introspection'

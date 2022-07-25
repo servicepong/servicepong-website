@@ -1,0 +1,74 @@
+query Blog($categoryId: String) {
+  allCategorys(sortBy: title_ASC) {
+    edges {
+      node {
+        color
+        title
+        _meta {
+          id
+          uid
+        }
+      }
+    }
+  }
+  allBlog_entrys(
+    where: { category: $categoryId }
+    sortBy: meta_firstPublicationDate_DESC
+  ) {
+    edges {
+      node {
+        category {
+          ... on Category {
+            title
+            color
+            _meta {
+              uid
+            }
+          }
+        }
+        title
+        content
+        excerpt
+        _meta {
+          uid
+          id
+          firstPublicationDate
+        }
+      }
+    }
+  }
+}
+
+query Category($slug: String!) {
+  allCategorys(uid: $slug) {
+    edges {
+      node {
+        title
+        color
+        _meta {
+          uid
+          id
+        }
+      }
+    }
+  }
+}
+
+query BlogDetails($slug: String!) {
+  blog_entry(uid: $slug, lang: "en-us") {
+    title
+    excerpt
+    content
+    _meta {
+      uid
+      firstPublicationDate
+      tags
+    }
+    category {
+      ... on Category {
+        title
+        color
+      }
+    }
+  }
+}
