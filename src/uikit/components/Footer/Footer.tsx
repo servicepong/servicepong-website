@@ -2,6 +2,8 @@ import { FC } from 'react';
 import NextLink from 'next/link';
 import { Box, Container, Flex, Link } from '@chakra-ui/react';
 
+import { route } from '@helper/routes';
+
 export const Footer: FC = () => {
   return (
     <footer>
@@ -29,7 +31,7 @@ export const Footer: FC = () => {
                   </NextLink>
                 </li>
                 <li style={{ listStyle: 'none' }}>
-                  <NextLink href={'/docs'} passHref>
+                  <NextLink href={route.docs()} passHref>
                     <Link>Docs</Link>
                   </NextLink>
                 </li>
